@@ -1,0 +1,67 @@
+@import "color";
+$ancho:100%;
+.navbar-light {
+    background-color: $grey-border;
+}
+
+.bg-light {
+    background-color: $grey-border !important;
+}
+
+a:hover {
+    color: $green-button;
+    opacity: 1;
+}
+
+.nav-link:focus {
+    color: $green-button;
+}
+
+.nav-link:hover {
+    color: $green-button;
+}
+
+.dropdown-item:active {
+    color: white;
+    background-color: $green-button;
+}
+
+.dropdown-item:hover {
+    background-color: $grey-border;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    margin-left: -90px;
+}
+
+
+/*encabezado*/
+
+.content-hero-s {
+    width: $ancho / 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.con-w {
+    width: $ancho * 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    color: $white;
+}
+
+.header-bg {
+    display: flex;
+    width: 100%;
+    background-image: url(../img/header-img.jpg);
+    padding: 5%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+}

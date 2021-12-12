@@ -1,0 +1,59 @@
+@import "color";
+body {
+    font-family: 'Lato', sans-serif;
+    word-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    box-sizing: unset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $titles;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0;
+}
+
+hr {
+    border: 1px solid $grey-01;
+    opacity: 1;
+}
+
+a,
+.navbar-light,
+.navbar-nav,
+.nav-link {
+    text-decoration: none;
+    color: $titles;
+    opacity: 1;
+}
+
+p {
+    color: $parrafos;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+
+li,
+label {
+    color: #041204;
+    font-style: normal;
+    font-weight: 600;
+    list-style: none;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}

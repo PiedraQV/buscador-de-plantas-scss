@@ -1,0 +1,46 @@
+@import "color";
+@import "fonts";
+input {
+    border: 1px solid $grey-01;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+input:focus {
+    border-style: $grey-border !important;
+}
+
+.input-group-text {
+    background-color: $green-dark;
+    color: $white;
+    border: $green-dark;
+}
+
+button {
+    display: inline-block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: $white;
+    text-align: center;
+    transition: all 0.3s;
+    background-color: $green-dark;
+    height: 40px;
+    border-style: none;
+    width: 0.5% auto 0.5% auto;
+}
+
+button:hover {
+    color: white;
+    background-color: $titles;
+    transform: scale(1.1, 1.1);
+    animation-name: efect-1;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}

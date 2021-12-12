@@ -1,0 +1,115 @@
+@import "color";
+$ancho:100%;
+
+/*------tarjeta-------*/
+
+.card {
+    transition: box-shadow .3s;
+    border-radius: 6px;
+    border: 1px solid $grey-01;
+    background: $white;
+}
+
+.card:hover {
+    box-shadow: 0 0 18px $grey-01;
+}
+
+
+/*------filtro-------*/
+
+.bg-border-menu {
+    padding: $ancho * 0.01;
+    border: 1px solid $grey-01;
+}
+
+
+/* Pagina Detalle */
+
+.content-d {
+    padding-top: $ancho * 0.05;
+    padding-bottom: $ancho * 0.05;
+}
+
+
+/*pagina agenda*/
+
+.p-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carac-bg {
+    align-items: center;
+    padding-top: $ancho * 0.05;
+    padding-bottom: $ancho * 0.05;
+}
+
+.sp-bt {
+    padding: $ancho * 0.02;
+}
+
+
+/*perfil*/
+
+.divider-l {
+    border-left: 1px solid $grey-01;
+}
+
+
+/* Escanear page*/
+
+.i-escaner {
+    padding: $ancho * 0.02;
+    height: 450px;
+}
+
+.pp-es {
+    width: $ancho * 0.6;
+}
+
+.upl {
+    display: flex;
+    width: $ancho / 2;
+    height: 150px;
+    background-color: $white;
+    border: 1px solid $grey-01;
+    padding: $ancho * 0.02;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cont-es {
+    padding-top: $ancho * 0.02;
+    padding-bottom: $ancho * 0.02;
+}
+
+
+/*------footer-----*/
+
+footer {
+    border: 1px solid $grey-01;
+    padding-top: $ancho * 0.02;
+    margin: 0;
+    padding-bottom: $ancho * 0.02;
+    background-color: $grey-border;
+}
+
+@each $bg-r in bg-ric,
+i-escaner {
+    .#{$bg-r} {
+        border: 1px solid $grey-01;
+        margin-top: $ancho * 0.01;
+        margin-bottom: $ancho * 0.05;
+        padding: $ancho *0.02;
+        background-color: $grey-border;
+        border-radius: 6px;
+    }
+}

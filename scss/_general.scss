@@ -5,13 +5,15 @@ $ancho:100%;
 
 .card {
     transition: box-shadow .3s;
+    transition: transform .2s;
     border-radius: 6px;
     border: 1px solid $grey-01;
     background: $white;
 }
 
 .card:hover {
-    box-shadow: 0 0 18px $grey-01;
+    box-shadow: 0 0 18px $grey-border;
+    transform: scale(1.05);
 }
 
 

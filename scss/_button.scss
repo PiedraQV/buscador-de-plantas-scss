@@ -44,3 +44,8 @@ button a {
     text-decoration: none;
     color: white;
 }
+
+a.dropdown-item:hover {
+    color: $white;
+    background-color: $green-font;
+}

@@ -1,0 +1,6 @@
+# archivos no necesarios
+package-lock.json
+package.json
+
+# ignora carpeta
+node_modules

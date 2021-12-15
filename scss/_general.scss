@@ -7,13 +7,13 @@ $ancho:100%;
     transition: box-shadow .3s;
     transition: transform .2s;
     border-radius: 6px;
-    border: 1px solid $grey-01;
-    background: $white;
+    border: 1px solid #E6E8E6;
+    background: #ffffff;
 }
 
 .card:hover {
-    box-shadow: 0 0 18px $grey-border;
-    transform: scale(1.05);
+    box-shadow: 0 0 18px #F2F3F2;
+    transform: scale(1.03);
 }
 
 
@@ -28,8 +28,15 @@ $ancho:100%;
 /* Pagina Detalle */
 
 .content-d {
-    padding-top: $ancho * 0.05;
     padding-bottom: $ancho * 0.05;
+}
+
+.bg-car {
+    background-color: $grey-border;
+    margin: 0;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 
@@ -44,6 +51,13 @@ $ancho:100%;
     margin-right: auto;
 }
 
+
+/*Recordatorio*/
+
+.space-br {
+    padding-bottom: 30%;
+}
+
 .carac-bg {
     align-items: center;
     padding-top: $ancho * 0.05;
@@ -54,6 +68,18 @@ $ancho:100%;
     padding: $ancho * 0.02;
 }
 
+.d-flex {
+    display: flex!important;
+    align-items: center;
+}
+
+
+/*Inventario*/
+
+.space-inv {
+    padding-bottom: 12%;
+}
+
 
 /*perfil*/
 
@@ -61,13 +87,12 @@ $ancho:100%;
     border-left: 1px solid $grey-01;
 }
 
+.space-perfil {
+    padding-bottom: 3%;
+}
+
 
 /* Escanear page*/
-
-.i-escaner {
-    padding: $ancho * 0.02;
-    height: 450px;
-}
 
 .pp-es {
     width: $ancho * 0.6;
@@ -93,6 +118,10 @@ $ancho:100%;
     padding-bottom: $ancho * 0.02;
 }
 
+.space-sc {
+    padding-bottom: 3%;
+}
+
 
 /*------footer-----*/
 
@@ -104,14 +133,24 @@ footer {
     background-color: $grey-border;
 }
 
-@each $bg-r in bg-ric,
-i-escaner {
-    .#{$bg-r} {
-        border: 1px solid $grey-01;
-        margin-top: $ancho * 0.01;
-        margin-bottom: $ancho * 0.05;
-        padding: $ancho *0.02;
-        background-color: $grey-border;
-        border-radius: 6px;
+
+/*---- responsive para menu ----*/
+
+@media screen and (min-width: 320px) and (max-width: 1100px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        margin-left: 0px;
     }
+}
+
+
+/*contact-register-ingresa-contraseÃ±a*/
+
+.bg-ric {
+    border: 1px solid $grey-01;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: $grey-border;
+    border-radius: 6px;
 }

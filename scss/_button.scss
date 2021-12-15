@@ -45,7 +45,11 @@ button a {
     color: white;
 }
 
-a.dropdown-item:hover {
+.space-b {
+    margin-left: 1%;
+}
+
+.btn-style {
+    background-color: $green-dark;
     color: $white;
-    background-color: $green-font;
 }
